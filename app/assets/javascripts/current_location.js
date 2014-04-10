@@ -45,5 +45,6 @@
       });
 
       document.getElementById('bbox').innerHTML=  map.getBounds();
-
+      window.map = map
+      console.log(window.map.getBounds().toString())
     }

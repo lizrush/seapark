@@ -9,7 +9,7 @@ $(document).ready(function() {
       url: "real url/requests",
       type: 'POST',
       dataType: 'json',
-      data: {center: center, bbox: bbox, map_size: map_size },
+      data: {request: {center: center, bbox: bbox, map_size: map_size }},
       success: function(data, textStatus, xhr) {
         // // get url and then do stuff
         url = data

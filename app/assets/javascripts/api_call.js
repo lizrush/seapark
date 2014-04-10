@@ -6,12 +6,13 @@ $(document).ready(function() {
     var map_size = "500,500";
 
     $.ajax({
-      url: "real url/requests",
+      url: "http://localhost:3000/requests",
       type: 'POST',
       dataType: 'json',
       data: {center: center, bbox: bbox, map_size: map_size },
       success: function(data, textStatus, xhr) {
         // // get url and then do stuff
+        console.log(data)
         url = data
         overlay.init(url)
       },

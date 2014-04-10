@@ -1,10 +1,9 @@
 $(document).ready(function() {
   $("#find-parking").click(function() {
 
-    var bounds = new google.maps.LatLngBounds(document.getElementById("map-canvas")).getNorthEast();
-    var bbox = "1";
+    var bbox = document.getElementById('bbox').innerHTML;
     var center = document.getElementById('lat-longs').innerHTML;
-    var map_size = "500,400";
+    var map_size = "500,500";
 
     $.ajax({
       url: "http://localhost:3000",
@@ -15,7 +14,7 @@ $(document).ready(function() {
         // get url and then do stuff
       },
       error: function(xhr, textStatus, errorThrown) {
-        alert(center + " \n " + bbox + " \n " + map_size + " \n" + bounds);
+        alert(center + " \n " + bbox + " \n " + map_size);
       }
     });
     return false;

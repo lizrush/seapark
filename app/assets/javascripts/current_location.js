@@ -37,11 +37,13 @@
       var marker = new google.maps.Marker({
           position: pos,
           map: map,
-          title:"You are here"
+          title:"You are here",
       });
 
       google.maps.event.addListener(marker, 'click', function() {
         infowindow.open(map,marker);
       });
+
+      document.getElementById('bbox').innerHTML=  map.getBounds();
 
     }

@@ -6,7 +6,7 @@ $(document).ready(function() {
     var map_size = "500,500";
 
     $.ajax({
-      url: "/requests",
+      url: "http://localhost:3000/requests",
       type: 'POST',
       dataType: 'json',
       data: {request: {coords: center, bounds: bbox, size: map_size }},
@@ -14,7 +14,6 @@ $(document).ready(function() {
         url = data.overlay.url
         // window.set_overlay
         set_overlay(url)
-
       },
       error: function(xhr, textStatus, errorThrown) {
         alert(center + " \n " + bbox + " \n " + map_size);

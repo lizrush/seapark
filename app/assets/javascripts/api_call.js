@@ -12,7 +12,7 @@ $(document).ready(function() {
       data: {request: {coords: center, bounds: bbox, size: map_size }},
       success: function(data, textStatus, xhr) {
         // // get url and then do stuff
-        console.log(data)
+        console.log("SUCCESS", data)
         url = data
         overlay.init(url)
       },

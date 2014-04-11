@@ -44,7 +44,6 @@
         infowindow.open(map,marker);
       });
 
-      document.getElementById('bbox').innerHTML=  map.getBounds();
+      window.marker = marker
       window.map = map
-      console.log(window.map.getBounds().toString())
     }

@@ -2,7 +2,7 @@ $(document).ready(function() {
   $("#find-parking").click(function() {
 
     var bbox = map.getBounds().toString();
-    var center = document.getElementById('lat-longs').innerHTML;
+    var center = map.marker;
     var map_size = "500,500";
 
     $.ajax({

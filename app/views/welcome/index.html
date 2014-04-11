@@ -10,10 +10,18 @@
 
     <br><br>
     <a id="find-parking" class="btn btn-primary">Find parking near me!</a>
-    <a href="/locations" class="btn btn-primary">Search for a location</a>
+    <a id="search-parking" class="btn btn-primary">Search for a location</a>
 
   <br>
   <br>
+
+<div id="panel">
+      <input id="address" type="textbox" value="Seattle">
+      <input type="button" value="Geocode" onclick="codeAddress()">
+</div>
+
+<div id="map-canvas" style="width:500px; height:500px"></div>
+
 
 </div>
 

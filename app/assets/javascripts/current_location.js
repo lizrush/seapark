@@ -39,10 +39,6 @@
           title: "You are here",
       });
 
-      google.maps.event.addListener(marker, 'click', function() {
-        infowindow.open(map,marker);
-      });
-
-      window.marker = marker
+      window.mapcenter = pos.toString();
       window.map = map
     }

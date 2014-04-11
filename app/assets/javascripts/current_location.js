@@ -29,7 +29,6 @@
     {
       var latitude = parseFloat( p.coords.latitude );
       var longitude = parseFloat( p.coords.longitude );
-      document.getElementById('lat-longs').innerHTML= latitude + "," + longitude;
       var pos = new google.maps.LatLng( latitude , longitude);
       map.setCenter(pos);
       map.setZoom(16);

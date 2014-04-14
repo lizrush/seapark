@@ -8,7 +8,7 @@ $(document).ready(function() {
     var map_size = "500,500";
 
     $.ajax({
-      url: "http://localhost:4000/requests",
+      url: "http://seapark-api.herokuapp.com/requests",
       type: 'POST',
       dataType: 'json',
       data: {request: {coords: center, bounds: bbox, size: map_size }},

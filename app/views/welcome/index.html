@@ -1,0 +1,24 @@
+<div id="inner-contents">
+
+    <h1>Find parking</h1>
+
+    <a id="find-parking" class="btn btn-primary">Find parking near me!</a>
+    <a id="search-parking" class="btn btn-primary" onclick="toggle_visibility('search-bar');">Search for a location</a>
+    <!-- add show search bar on click -->
+      <br>
+    <div id="search-bar">
+    <!-- hidden until clicked -->
+      <input id="address" type="textbox" value="Space Needle">
+      <input type="button" value="Geocode" onclick="codeAddress()">
+    </div>
+
+  <br>
+
+    <div id="current">Initializing...</div>
+    <div id="map_canvas"></div>
+
+    <br><br>
+    <a class="btn btn-primary" onclick="removeOverlay()">Clear Map</a>
+</div>
+
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>

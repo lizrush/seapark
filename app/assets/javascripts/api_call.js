@@ -1,25 +1,30 @@
 $(document).ready(function() {
   $("#find-parking").click(function() {
 
+    map.setOptions(window.disabled_map);
+
     var bbox = map.getBounds().toString();
     var center = mapcenter;
     var map_size = "500,500";
 
     $.ajax({
-      url: "http://localhost:4000/requests",
+      url: "http://seapark-api.herokuapp.com/requests",
       type: 'POST',
       dataType: 'json',
       data: {request: {coords: center, bounds: bbox, size: map_size }},
       success: function(data, textStatus, xhr) {
-        console.log(data)
         url = data.url
         window.set_overlay(url)
+      map.setOptions(window.enabled_map);
+
       },
+
       error: function(xhr, textStatus, errorThrown) {
-        alert("fail\n" + center + " \n " + bbox + " \n " + map_size);
+        alert("We're sorry, something when wrong! Please try again.");
       }
     });
+
     return false;
+
   });
 });
-

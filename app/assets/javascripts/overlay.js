@@ -1,4 +1,4 @@
-function set_overlay(url){
+function set_overlay(){
 
   var imageBounds = window.map.getBounds();
 

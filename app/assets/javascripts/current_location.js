@@ -1,4 +1,4 @@
-    function initialiseMap()
+function initialiseMap()
     {
         var myOptions = {
             zoom: 16,
@@ -39,6 +39,20 @@
           title: "You are here",
       });
 
+      window.disabled_map = {
+          zoomControl: false,
+          scaleControl: false,
+          scrollwheel: false,
+          disableDoubleClickZoom: true,
+          draggable: false,
+        };
+      window.enabled_map =  {
+          zoomControl: true,
+          scaleControl: true,
+          scrollwheel: true,
+          disableDoubleClickZoom: false,
+          draggable: true,
+        };
       window.mapcenter = pos.toString();
       window.map = map
     }

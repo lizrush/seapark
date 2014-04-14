@@ -4,9 +4,9 @@
 # server in each group is considered to be the first
 # unless any hosts have the primary property set.
 # Don't declare `role :all`, it's a meta role
-role :app, %w{deploy@ec2-54-187-39-43.us-west-2.compute.amazonaws.com}
-role :web, %w{deploy@ec2-54-187-39-43.us-west-2.compute.amazonaws.com}
-role :db,  %w{deploy@ec2-54-187-39-43.us-west-2.compute.amazonaws.com}
+role :app, %w{deploy@ec2-54-186-95-72.us-west-2.compute.amazonaws.com}
+role :web, %w{deploy@ec2-54-186-95-72.us-west-2.compute.amazonaws.com}
+role :db,  %w{deploy@ec2-54-186-95-72.us-west-2.compute.amazonaws.com}
 
 # Extended Server Syntax
 # ======================
@@ -26,7 +26,7 @@ role :db,  %w{deploy@ec2-54-187-39-43.us-west-2.compute.amazonaws.com}
 #    auth_methods: %w(password)
 #  }
 # and/or per server
-server 'ec2-54-187-39-43.us-west-2.compute.amazonaws.com',
+server 'ec2-54-186-95-72.us-west-2.compute.amazonaws.com',
   user: 'ubuntu',
   roles: %w{web app},
   ssh_options: {

@@ -1,24 +1,69 @@
-<div id="inner-contents">
-
+<div id="inner-contents" class="row">
+  <div class="row">
     <h1>Where can I park in Seattle?</h1>
-
     <a id="find-parking" class="btn btn-primary">Find parking near me!</a>
     <a id="search-parking" class="btn btn-primary" onclick="toggle_visibility('search-bar');">Search for a location</a>
-    <!-- add show search bar on click -->
-      <br>
-    <div id="search-bar">
-    <!-- hidden until clicked -->
-      <input id="address" type="textbox" value="Space Needle">
-      <input type="button" value="Geocode" onclick="codeAddress()">
     </div>
+  <div class="col-md-8">
+    <!-- add show search bar on click -->
+      <div id="search-bar">
+        <br>
+        <input id="address" type="textbox" value="Space Needle">
+        <input type="button" value="Geocode" onclick="codeAddress()">
+      </div>
 
-  <br>
+        <div id="current">Initializing...</div>
+        <div id="map_canvas"></div>
+  </div>
+      <br><br>
+  <div class="col-md-4">
+    <table class="table-condensed">
+      <tr>
+        <td><img src="assets/legendimages/temp-no-parking.png"/></td>
+        <td>Temporary No Parking</td>
+      </tr>
+      <tr>
+        <td><img src="assets/legendimages/paid-parking.png"/></td>
+        <td>Paid Parking</td>
+      </tr>
+      <tr>
+        <td><img src="assets/legendimages/restricted-zone.png"/></td>
+        <td>Restricted Parking Zone</td>
+      </tr>
+      <tr>
+        <td><img src="assets/legendimages/time-limit.png"/></td>
+        <td>Time Limited Parking</td>
+      </tr>
+      <tr>
+        <td><img src="assets/legendimages/carpool-parking.png"/></td>
+        <td>Carpool Parking</td>
+      </tr>
+      <tr>
+        <td><img src="assets/legendimages/no-parking.png"/></td>
+        <td>No Parking Allowed</td>
+      </tr>
+      <tr>
+        <td><img src="assets/legendimages/unrestricted.png"/></td>
+        <td>Unrestricted Parking</td>
+      </tr>
+      <tr>
+        <td><img src="assets/legendimages/am-restrictions.png"/></td>
+        <td>AM Restrictions</td>
+      </tr>
+      <tr>
+        <td><img src="assets/legendimages/am-pm-restrictions.png"/></td>
+        <td>AM/PM Restrictions</td>
+      </tr>
+      <tr>
+        <td><img src="assets/legendimages/pm-restrictions.png"/></td>
+        <td>PM Restrictions</td>
+      </tr>
+    </table>
+   <br><br>
 
-    <div id="current">Initializing...</div>
-    <div id="map_canvas"></div>
-
-    <br><br>
     <a class="btn btn-primary" onclick="removeOverlay()">Clear Map</a>
+  </div>
+
 </div>
 
 <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>

@@ -7,13 +7,14 @@
   <div class="col-md-8">
     <!-- add show search bar on click -->
       <div id="search-bar">
-        <br>
-        <input id="address" type="textbox" value="Space Needle">
-        <input type="button" value="Geocode" onclick="codeAddress()">
+        <label class="sr-only" for="address">Search for locations</label>
+        <input id="address" type="textbox" value="Space Needle" class="form-control">
+        <input type="button" value="Go!" onclick="codeAddress()" class="btn btn-success">
       </div>
 
         <div id="current">Initializing...</div>
         <div id="map_canvas"></div>
+        <br><br>
   </div>
       <br><br>
   <div class="col-md-4">

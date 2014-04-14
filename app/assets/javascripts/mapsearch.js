@@ -12,7 +12,7 @@ function codeAddress() {
             draggable: false
         });
         } else {
-          alert('Geocode was not successful for the following reason: ' + status);
+          alert('Sorry, search was not successful for the following reason: ' + status);
         }
     });
   }

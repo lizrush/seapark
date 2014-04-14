@@ -8,7 +8,7 @@
     <!-- add show search bar on click -->
       <div id="search-bar">
         <label class="sr-only" for="address">Search for locations</label>
-        <input id="address" type="textbox" value="Space Needle" class="form-control">
+        <input id="address" type="textbox" value="The Space Needle" class="form-control">
         <input type="button" value="Go!" onclick="codeAddress()" class="btn btn-success">
       </div>
 
@@ -20,7 +20,7 @@
   <div class="col-md-4">
     <table class="table-condensed">
       <tr>
-        <td><img src="assets/legendimages/temp-no-parking.png"/></td>
+        <td><%= image_tag('legendimages/temp-no-parking.png') %></td>
         <td>Temporary No Parking</td>
       </tr>
       <tr>

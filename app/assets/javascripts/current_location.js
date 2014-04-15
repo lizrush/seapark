@@ -2,7 +2,6 @@ function initialiseMap()
     {
         var myOptions = {
             zoom: 12,
-            center: new google.maps.LatLng(47.610913, -122.335842),
             mapTypeControl: true,
             mapTypeControlOptions: {style: google.maps.MapTypeControlStyle.DROPDOWN_MENU},
             navigationControl: true,
@@ -16,7 +15,8 @@ function initialiseMap()
       if(geoPosition.init())
       {
         // replace laoding html with graphic something or other
-        document.getElementById('current').innerHTML="Loading...";
+        console.log(document.getElementById('loading'));
+
         geoPosition.getCurrentPosition(showPosition,function(){document.getElementById('current').innerHTML="Couldn't get location; try reloading the page"},{enableHighAccuracy:true});
       }
       else

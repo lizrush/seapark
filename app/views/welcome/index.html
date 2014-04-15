@@ -12,8 +12,14 @@
         <input type="button" value="Go!" onclick="codeAddress()" class="btn btn-success">
       </div>
 
-        <div id="current">Initializing...</div>
+      <div id="loading">
+        <%= image_tag('loader-small.gif') %>
+        <div id="current">Initializing... </div>
+      </div>
+
         <div id="map_canvas"></div>
+
+
         <br><br>
   </div>
       <br><br>

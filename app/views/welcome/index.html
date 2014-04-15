@@ -18,13 +18,10 @@
       </div>
 
         <div id="map_canvas"></div>
-
-
-        <br><br>
   </div>
       <br><br>
   <div class="col-md-4">
-    <table class="table-condensed">
+    <table class="table-condensed" id="legend">
       <tr>
         <td><%= image_tag('legendimages/temp-no-parking.png') %></td>
         <td>Temporary No Parking</td>
@@ -66,9 +63,8 @@
         <td>PM Restrictions</td>
       </tr>
     </table>
-   <br><br>
-
-    <a class="btn btn-primary" onclick="removeOverlay()">Clear Map</a>
+    <br>
+    <a class="btn btn-xs btn-primary" onclick="removeOverlay()">Clear Map</a>
   </div>
 
 </div>

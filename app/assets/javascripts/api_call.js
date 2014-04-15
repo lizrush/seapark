@@ -7,7 +7,7 @@ $(document).ready(function() {
 
     var bbox = map.getBounds().toString();
     var center = mapcenter;
-    var map_size = "500,500";
+    var map_size = "400,400";
 
     $.ajax({
       url: "http://seapark-api.herokuapp.com/requests",

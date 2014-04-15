@@ -131,3 +131,22 @@ td {
     border-radius: 14px;
     padding: 5px;
 }
+
+
+#close {
+    position: absolute;
+    background: url(close.png) 0 0 no-repeat;
+    width: 24px;
+    height: 27px;
+    display: block;
+    text-indent: -9999px;
+    top: -7px;
+    right: -7px;
+}
+
+#modal-content {
+    border-radius: 5px;
+    background: #fff;
+    padding: 20px;
+}
+

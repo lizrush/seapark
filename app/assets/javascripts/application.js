@@ -76,9 +76,8 @@ var modal = (function(){
         // put stuff into modal
         $overlay = $('<div id="overlay"></div>');
         $modal = $('<div id="modal"></div>');
-        $content = $('<div id="content"></div>');
+        $content = $('<div id="modal-content"></div>');
         $close = $('<a id="close" href="#">close</a>');
-        $continueshopping = $('<a id="closecart" href="#">Continue shopping.</a>');
 
 
         $modal.hide();

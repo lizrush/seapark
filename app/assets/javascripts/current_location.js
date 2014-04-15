@@ -16,7 +16,7 @@ function initialiseMap()
       {
         // replace laoding html with graphic something or other
         geoPosition.getCurrentPosition(showPosition,function(){document.getElementById('current').innerHTML="Couldn't get location; try reloading the page"},{enableHighAccuracy:true});
-
+        document.getElementById('current').innerHTML = "Loading...";
       }
       else
       {
@@ -54,6 +54,6 @@ function initialiseMap()
           draggable: true,
         };
       window.mapcenter = pos.toString();
-      window.map = map
+      window.map = map;
       document.getElementById('loading').style.visibility = "hidden";
     }

@@ -2,6 +2,7 @@ $(document).ready(function() {
   $("#find-parking").click(function() {
 
     map.setOptions(window.disabled_map);
+    document.getElementById('current').innerHTML = "Retrieving data...";
     document.getElementById('loading').style.visibility = "visible";
 
     var bbox = map.getBounds().toString();

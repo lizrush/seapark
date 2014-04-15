@@ -1,6 +1,5 @@
 class WelcomeController < ApplicationController
-
-  def index
+  def about
+    render partial: 'about'
   end
-
 end

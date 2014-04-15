@@ -5,4 +5,3 @@ function set_overlay(){
   parkingOverlay = new google.maps.GroundOverlay(url, imageBounds);
   parkingOverlay.setMap(map);
 }
-

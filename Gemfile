@@ -7,7 +7,7 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails'
 gem 'jbuilder', '~> 1.2'
 gem 'httparty'
-gem 'sqlite3', '1.3.9'
+gem 'sqlite3'
 gem 'gmaps4rails'
 gem 'underscore-rails'
 
@@ -38,3 +38,4 @@ group :development do
 end
 
 gem 'therubyracer', platforms: :ruby
+

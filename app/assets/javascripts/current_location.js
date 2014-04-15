@@ -1,4 +1,4 @@
-    function initialiseMap()
+function initialiseMap()
     {
         var myOptions = {
             zoom: 12,

@@ -1,7 +1,8 @@
     function initialiseMap()
     {
         var myOptions = {
-            zoom: 16,
+            zoom: 12,
+            center: new google.maps.LatLng(47.610913, -122.335842),
             mapTypeControl: true,
             mapTypeControlOptions: {style: google.maps.MapTypeControlStyle.DROPDOWN_MENU},
             navigationControl: true,

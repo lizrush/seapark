@@ -60,7 +60,6 @@ function handleBlackBerryLocation()
 }
 
 var geoPosition=function() {
-
         var pub = {};
         var provider=null;
     var u="undefined";

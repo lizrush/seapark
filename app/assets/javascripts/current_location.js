@@ -15,9 +15,8 @@ function initialiseMap()
       if(geoPosition.init())
       {
         // replace laoding html with graphic something or other
-        console.log(document.getElementById('loading'));
-
         geoPosition.getCurrentPosition(showPosition,function(){document.getElementById('current').innerHTML="Couldn't get location; try reloading the page"},{enableHighAccuracy:true});
+
       }
       else
       {
@@ -56,4 +55,5 @@ function initialiseMap()
         };
       window.mapcenter = pos.toString();
       window.map = map
+      document.getElementById('loading').style.visibility = "hidden";
     }

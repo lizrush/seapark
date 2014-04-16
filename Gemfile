@@ -8,8 +8,7 @@ gem 'jquery-rails'
 gem 'jbuilder', '~> 1.2'
 gem 'httparty'
 gem 'sqlite3'
-gem 'gmaps4rails'
-gem 'underscore-rails'
+
 
 
 group :doc do

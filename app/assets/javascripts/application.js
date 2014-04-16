@@ -13,8 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
-//= require underscore
-//= require gmaps/google
+
 
 // this method is used onClick when the user wants to search for a location.
 function toggle_visibility(id) {

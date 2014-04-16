@@ -1,28 +1,6 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This parking app is designed to return the parking restrictions. Seattle has a reputation for absurd parking signs that are fully or partially indecipherable to the layman. There are many streets that have no signs posted or are hard to interpret. The user will pull up the app on their phone, and based on their current location, will receive back mapped information about what the parking restrictions are in their immediate area.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Target Audience
+After informally polling friends, family, neighbors, and coworkers, it appears that this app would be most useful and wanted by those who do not live in the urban core, but rather the more residential neighborhoods or suburbs. Some long-term residents of Seattle have given me the feedback that they know the rules in their own neighborhood, but that when they travel to another area they are often unsure about the parking restrictions in other residential neighborhoods. My parents are moving to Seattle in the near future, so they also represent another target: new Seattle transplants and visitors.

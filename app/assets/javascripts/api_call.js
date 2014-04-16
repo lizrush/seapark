@@ -7,9 +7,9 @@ $(document).ready(function() {
     document.getElementById('loading').style.visibility = "visible";
 
     // Set variables for making the call to the API. If the map_canvas size changes, be sure to update here.
-    // mapcenter is currently set for the user's current location. **Update this to be the map's center no matter the user's location.
+    // Center is the map's center, NOT the user's location by default. This data is used for validations, query limits to the API, and caching.
     var bbox = map.getBounds().toString();
-    var center = mapcenter;
+    var center = map.getCenter().toString();
     var map_size = "400,400";
 
     $.ajax({

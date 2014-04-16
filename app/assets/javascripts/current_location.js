@@ -56,7 +56,6 @@ function initialiseMap()
           disableDoubleClickZoom: false,
           draggable: true,
         };
-      window.mapcenter = pos.toString();
       window.map = map;
 
       // Hides the loading div once the map has displayed the current user's location.

@@ -1,10 +1,13 @@
 $(document).ready(function() {
   $("#find-parking").click(function() {
-
+    // before making the call to the API, this will toggle the mapOptions so that the user cannot drag to a new location or zoom in or out. This prevents the user from changing the view of the map before the overlay is placed.
+    // Toggle the semi-transparent div with loading gif and set the text so that the user knows the app is still running.
     map.setOptions(window.disabled_map);
     document.getElementById('current').innerHTML = "Retrieving data...";
     document.getElementById('loading').style.visibility = "visible";
 
+    // set variables for making the call to the API. If the map_canvas size changes, be sure to update here.
+    // mapcenter is currently set for the user's current location. **Update this to be the map's center no matter the user's location.
     var bbox = map.getBounds().toString();
     var center = mapcenter;
     var map_size = "400,400";
@@ -15,14 +18,18 @@ $(document).ready(function() {
       dataType: 'json',
       data: {request: {coords: center, bounds: bbox, size: map_size }},
       success: function(data, textStatus, xhr) {
+        // The API returns a url to the png overlay for the map. We pass this in to the overlay method.
         url = data.url
         window.set_overlay(url)
+        // Re-enable the map so the user can browse nearby or change location after the call is completed & hide the loading div.
         map.setOptions(window.enabled_map);
         document.getElementById('loading').style.visibility = "hidden";
       },
 
       error: function(xhr, textStatus, errorThrown) {
+        // On failure, we alert with js popup, re-enable the map and hide the loader div.
         alert("We're sorry, something when wrong! Please try again.");
+        map.setOptions(window.enabled_map);
         document.getElementById('loading').style.visibility = "hidden";
       }
     });

@@ -1,12 +1,12 @@
 $(document).ready(function() {
   $("#find-parking").click(function() {
-    // before making the call to the API, this will toggle the mapOptions so that the user cannot drag to a new location or zoom in or out. This prevents the user from changing the view of the map before the overlay is placed.
+    // Before making the call to the API, this will toggle the mapOptions so that the user cannot drag to a new location or zoom in or out. This prevents the user from changing the view of the map before the overlay is placed.
     // Toggle the semi-transparent div with loading gif and set the text so that the user knows the app is still running.
     map.setOptions(window.disabled_map);
     document.getElementById('current').innerHTML = "Retrieving data...";
     document.getElementById('loading').style.visibility = "visible";
 
-    // set variables for making the call to the API. If the map_canvas size changes, be sure to update here.
+    // Set variables for making the call to the API. If the map_canvas size changes, be sure to update here.
     // mapcenter is currently set for the user's current location. **Update this to be the map's center no matter the user's location.
     var bbox = map.getBounds().toString();
     var center = mapcenter;

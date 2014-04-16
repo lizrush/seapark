@@ -16,7 +16,7 @@
 //= require underscore
 //= require gmaps/google
 
-
+// this method is used onClick when the user wants to search for a location.
 function toggle_visibility(id) {
        var e = document.getElementById(id);
        if(e.style.display == 'block')
@@ -25,10 +25,12 @@ function toggle_visibility(id) {
           e.style.display = 'block';
     }
 
+// removes current map overlay. This needs to be updated to remove ALL overlays. Right now, only the most recent overlay is cleared.
 function removeOverlay() {
   parkingOverlay.setMap(null);
 }
 
+// modal about window is dynamically created below to be centered in the user's window.
 var modal = (function(){
         var
         method = {},
@@ -65,7 +67,7 @@ var modal = (function(){
           $overlay.show();
         };
 
-        // close
+        // close the modal
         method.close = function () {
           $modal.hide();
           $overlay.hide();
@@ -73,7 +75,7 @@ var modal = (function(){
           $(window).unbind('resize.modal');
         };
 
-        // put stuff into modal
+        // create contents for modal
         $overlay = $('<div id="overlay"></div>');
         $modal = $('<div id="modal"></div>');
         $content = $('<div id="modal-content"></div>');

@@ -10,7 +10,7 @@ $(document).ready(function() {
     var map_size = "400,400";
 
     $.ajax({
-      url: "http://seapark-api.herokuapp.com/requests",
+      url: "http://ec2-54-186-130-90.us-west-2.compute.amazonaws.com/requests",
       type: 'POST',
       dataType: 'json',
       data: {request: {coords: center, bounds: bbox, size: map_size }},

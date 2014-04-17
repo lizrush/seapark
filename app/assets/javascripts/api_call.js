@@ -19,10 +19,10 @@ $(document).ready(function() {
       data: {request: {coords: center, bounds: bbox, size: map_size }},
       success: function(data, textStatus, xhr) {
         // The API returns a url to the png overlay for the map. We pass this in to the overlay method.
-        url = data.url
-        window.set_overlay(url)
+
+        window.set_overlay(data)
         // Re-enable the map so the user can browse nearby or change location after the call is completed & hide the loading div.
-        map.setOptions(window.enabled_map);
+        map.setOptions(enabled_map);
         document.getElementById('loading').style.visibility = "hidden";
       },
 

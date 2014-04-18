@@ -20,4 +20,11 @@ describe WelcomeController do
       response.should render_template(:partial => '_about')
     end
   end
+
+  describe "GET #help" do
+    it "responds successfully with an HTTP 200" do
+      get :help
+      response.should render_template(:partial => '_help')
+    end
+  end
 end

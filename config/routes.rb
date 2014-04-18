@@ -6,6 +6,7 @@ Seapark::Application.routes.draw do
   root 'welcome#index'
   get '/seattle' => 'welcome#index'
   get '/about' => 'welcome#about'
+  get '/help' => 'welcome#help'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

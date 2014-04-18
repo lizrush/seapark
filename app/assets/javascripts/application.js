@@ -106,4 +106,11 @@ var modal = (function(){
           });
           e.preventDefault();
         });
+
+        $('a#help').click(function(e){
+          $.get('/help', function(data){
+          modal.open({content: data});
+          });
+          e.preventDefault();
+        });
       })

@@ -1,3 +1,5 @@
+ // to use this tooltip, just make any html tag have rel="tooltip" and title="Enter your tip here"
+
 $( function()
 {
     var targets = $( '[rel~=tooltip]' ),

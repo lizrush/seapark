@@ -43,6 +43,10 @@ body {
   margin-right: auto;
 }
 
+#inner-contents table {
+  margin: auto;
+}
+
 .btn-primary {
   color: #f8f8f8;
   background-color: #292C35;
@@ -64,7 +68,10 @@ a:visited {
 }
 
 #map_canvas{
- margin: 50px;
+ margin-top: 40px;
+ margin-right: 50px;
+ margin-left: 50px;
+ margin-bottom: 50px;
  width: 400px;
  height: 400px;
 }
@@ -99,7 +106,10 @@ td {
 
 #loading {
   position: absolute;
-  margin: 50px;
+  margin-top: 40px;
+  margin-right: 50px;
+  margin-left: 50px;
+  margin-bottom: 50px;
   width: 400px;
   z-index: 10;
   background-color: rgba(255, 255, 255, 0.8);

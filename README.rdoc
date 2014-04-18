@@ -1,6 +1,8 @@
 == README
+This parking app was planned, designed, coded, & deployed in one month by Hsing-Hui Hsu and Liz Rush as a capstone project for Ada Developers Academy in April 2014.
 
-This parking app is designed to return the parking restrictions. Seattle has a reputation for absurd parking signs that are fully or partially indecipherable to the layman. There are many streets that have no signs posted or are hard to interpret. The user will pull up the app on their phone, and based on their current location, will receive back mapped information about what the parking restrictions are in their immediate area.
+To see some of the techincal requirements we had to complete, check out the Ada Developers Academy repo [here.](https://github.com/Ada-Developers-Academy/daily-curriculum/blob/master/capstone/capstone.md)
 
-Target Audience
-After informally polling friends, family, neighbors, and coworkers, it appears that this app would be most useful and wanted by those who do not live in the urban core, but rather the more residential neighborhoods or suburbs. Some long-term residents of Seattle have given me the feedback that they know the rules in their own neighborhood, but that when they travel to another area they are often unsure about the parking restrictions in other residential neighborhoods. My parents are moving to Seattle in the near future, so they also represent another target: new Seattle transplants and visitors.
+This web app is fed by our backend API, which you can find [here.](https://github.com/Elffers/parking-api)
+
+See it live! [wherecanipark.in/seattle](http://wherecanipark.in/seattle)

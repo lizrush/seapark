@@ -1,10 +1,11 @@
 function set_overlay(data){
   // parses out url and lats/longs necessary to place the overlay based on the request's bounds and not the current map's bounds
   url     = data.overlay.url
-  swlat   = data.bounds.replace(/[()]/g, "").split(",")[0]
-  swlong  = data.bounds.replace(/[()]/g, "").split(",")[1]
-  nelat   = data.bounds.replace(/[()]/g, "").split(",")[2]
-  nelong  = data.bounds.replace(/[()]/g, "").split(",")[3]
+  clean_bounds = data.bounds.replace(/[()]/g, "").split(",")
+  swlat   = clean_bounds[0]
+  swlong  = clean_bounds[1]
+  nelat   = clean_bounds[2]
+  nelong  = clean_bounds[3]
   swLL    = new google.maps.LatLng(swlat, swlong)
   neLL    = new google.maps.LatLng(nelat, nelong)
 

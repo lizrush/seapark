@@ -8,7 +8,7 @@ function codeAddress() {
       // centers the map on the first result
         map.setCenter(results[0].geometry.location);
         // drops a marker on the location of the first result.
-        marker = new google.maps.Marker({
+        window.marker = new google.maps.Marker({
             map: map,
             position: results[0].geometry.location,
             draggable: false

@@ -16,5 +16,6 @@ function codeAddress() {
         } else {
           alert('Sorry, search was not successful for the following reason: ' + status);
         }
+      toggle_visibility('search-bar');
     });
   }

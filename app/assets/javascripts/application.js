@@ -24,11 +24,6 @@ function toggle_visibility(id) {
           e.style.display = 'block';
     }
 
-// removes current map overlay. This needs to be updated to remove ALL overlays. Right now, only the most recent overlay is cleared.
-function removeOverlay() {
-  parkingOverlay.setMap(null);
-}
-
 // modal about window is dynamically created below to be centered in the user's window.
 var modal = (function(){
         var

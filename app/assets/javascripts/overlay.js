@@ -15,4 +15,5 @@ function set_overlay(data){
   // fetches png fron url and creates overlay object to place on map bound to the request's bounds
   parkingOverlay = new google.maps.GroundOverlay(url, imageBounds);
   parkingOverlay.setMap(map);
-}
+  window.overlay = parkingOverlay
+};

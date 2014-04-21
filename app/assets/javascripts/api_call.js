@@ -27,7 +27,7 @@ $(document).ready(function() {
 
       error: function(xhr, textStatus, errorThrown) {
         // On failure, we alert with js popup, re-enable the map and hide the loader div.
-        alert("We're sorry, something when wrong!" + "\n" + errorThrown + "\nPlease try again.");
+        alert("We're sorry, something when wrong!" + "\n" + xhr.responseText + "\nPlease try again.");
         map.setOptions(window.enabled_map);
         document.getElementById('loading').style.visibility = "hidden";
       }

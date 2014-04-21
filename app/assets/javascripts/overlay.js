@@ -1,6 +1,6 @@
 function set_overlay(data){
   // parses out url and lats/longs necessary to place the overlay based on the request's bounds and not the current map's bounds
-  url     = data.overlay.url
+  url     = "http://ec2-54-186-130-90.us-west-2.compute.amazonaws.com/" + data.overlay.url
   clean_bounds = data.bounds.replace(/[()]/g, "").split(",")
   swlat   = clean_bounds[0]
   swlong  = clean_bounds[1]

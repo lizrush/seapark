@@ -19,7 +19,6 @@ $(document).ready(function() {
       data: {request: {coords: center, bounds: bbox, size: map_size }},
       success: function(data, textStatus, xhr) {
         // The API returns a url to the png overlay for the map. We pass this in to the overlay method.
-
         window.set_overlay(data)
         // Re-enable the map so the user can browse nearby or change location after the call is completed & hide the loading div.
         map.setOptions(enabled_map);
@@ -28,7 +27,7 @@ $(document).ready(function() {
 
       error: function(xhr, textStatus, errorThrown) {
         // On failure, we alert with js popup, re-enable the map and hide the loader div.
-        alert("We're sorry, something when wrong! Please try again.");
+        alert("We're sorry, something when wrong!" + "\n" + errorThrown + "\nPlease try again.");
         map.setOptions(window.enabled_map);
         document.getElementById('loading').style.visibility = "hidden";
       }

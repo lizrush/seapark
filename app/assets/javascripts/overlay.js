@@ -24,3 +24,10 @@ function removeOverlay(){
    parkOverlay.setMap(null);
   };
 };
+
+function error_overlay(url){
+  // fetches png fron url and creates overlay object to place on map bound to the map's bounds
+  errorOverlay = new google.maps.GroundOverlay(url, map.getBounds());
+  errorOverlay.setMap(map);
+  window.parkOverlay = errorOverlay
+};

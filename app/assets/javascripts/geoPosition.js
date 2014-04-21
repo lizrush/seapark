@@ -259,3 +259,13 @@ var geoPosition=function() {
         }
         return pub;
 }();
+
+function showError(error){
+  document.getElementById('loading').style.visibility = "visible";
+  if (error.code == 1) {
+    document.getElementById('current').innerHTML = "It looks like you have location services turned off. Please allow wherecanipark.in to use your location to get started.";
+  } else {
+    document.getElementById('current').innerHTML = "Something went wrong; please ensure location services are on & try again.";
+  }
+
+}

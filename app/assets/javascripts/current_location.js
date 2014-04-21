@@ -16,7 +16,7 @@ function initialiseMap()
       if(geoPosition.init())
       {
         // Setting the text for the loading div.
-        geoPosition.getCurrentPosition(showPosition,function(){document.getElementById('current').innerHTML="Couldn't get location; try reloading the page"},{enableHighAccuracy:true});
+        geoPosition.getCurrentPosition(showPosition,showError,{enableHighAccuracy:true});
         document.getElementById('current').innerHTML = "Loading...";
       }
       else

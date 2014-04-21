@@ -57,6 +57,7 @@ function initialiseMap()
           draggable: true,
         };
       window.map = map;
+      window.marker = marker;
 
       // Hides the loading div once the map has displayed the current user's location.
       document.getElementById('loading').style.visibility = "hidden";

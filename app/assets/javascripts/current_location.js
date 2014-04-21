@@ -63,6 +63,6 @@ function initialiseMap()
 
       // removes the overlay when the user zooms in or out
       google.maps.event.addListener(map, 'zoom_changed', function() {
-        overlay.setMap(null);
+        parkOverlay.setMap(null);
       });
     }

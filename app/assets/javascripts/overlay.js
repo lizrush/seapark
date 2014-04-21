@@ -15,5 +15,12 @@ function set_overlay(data){
   // fetches png fron url and creates overlay object to place on map bound to the request's bounds
   parkingOverlay = new google.maps.GroundOverlay(url, imageBounds);
   parkingOverlay.setMap(map);
-  window.overlay = parkingOverlay
+  window.parkOverlay = parkingOverlay
+};
+
+// this method is an onclick event for find parking that removes the last overlay, no matter the zoon level. ideally this could be updated to have a map event listener on drag to just clear and make a new call but for now the user must click 'find parking'
+function removeOverlay(){
+  if (typeof parkOverlay != 'undefined') {
+   parkOverlay.setMap(null);
+  };
 };

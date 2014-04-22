@@ -15,15 +15,6 @@
 //= require_tree .
 
 
-// this method is used onClick when the user wants to search for a location.
-function toggle_visibility(id) {
-       var e = document.getElementById(id);
-       if(e.style.display == 'block')
-          e.style.display = 'none';
-       else
-          e.style.display = 'block';
-    }
-
 // modal about window is dynamically created below to be centered in the user's window.
 var modal = (function(){
         var
@@ -108,4 +99,4 @@ var modal = (function(){
           });
           e.preventDefault();
         });
-      })
+      });

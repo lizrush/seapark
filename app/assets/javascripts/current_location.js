@@ -10,24 +10,19 @@ function initialiseMap()
             mapTypeId: google.maps.MapTypeId.ROADMAP
           }
       map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
-    }
-    function initialise()
-    {
+    };
+
+    function initialise() {
       if(geoPosition.init())
-      {
-        // Setting the text for the loading div.
+      { // Setting the text for the loading div.
         geoPosition.getCurrentPosition(showPosition,showError,{enableHighAccuracy:true});
         document.getElementById('current').innerHTML = "Loading...";
-      }
-      else
-      {
-        // Sets text for loader div. Could replace with nice grapic in future.
+      } else { // Sets text for loader div. Could replace with nice grapic in future.
         document.getElementById('current').innerHTML="Functionality not available";
       }
-    }
+    };
 
-    function showPosition(p)
-    {
+    function showPosition(p) {
       // parse the coordinated and create a new Marker object to place on the map and set the center to that marker.
       var latitude = parseFloat( p.coords.latitude );
       var longitude = parseFloat( p.coords.longitude );
@@ -48,6 +43,8 @@ function initialiseMap()
           scrollwheel: false,
           disableDoubleClickZoom: true,
           draggable: false,
+          disableDefaultUI: true,
+          mapTypeControl: false,
         };
       window.enabled_map =  {
           zoomControl: true,
@@ -55,6 +52,8 @@ function initialiseMap()
           scrollwheel: true,
           disableDoubleClickZoom: false,
           draggable: true,
+          disableDefaultUI: false,
+          mapTypeControl: true,
         };
       window.map = map;
       window.marker = marker;

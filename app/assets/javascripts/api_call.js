@@ -29,6 +29,7 @@ $(document).ready(function() {
         // On failure, we alert with js popup, re-enable the map and hide the loader div.
         window.error_overlay(xhr.responseText);
         document.getElementById('loading').style.visibility = "hidden";
+
       }
     });
 

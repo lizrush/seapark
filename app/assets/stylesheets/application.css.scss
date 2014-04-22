@@ -76,23 +76,26 @@ a:visited {
  height: 400px;
 }
 
-#search-bar {
-  display: none;
-  position: absolute;
-  top: 55px;
-  left: 60%;
-  margin-left: -180px;
-  z-index: 5;
+#title {
   background-color: #fff;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
-    -moz-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
-    -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
-    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
-  border: 1px solid #999;
-  padding: 3px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -moz-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+  border: 1px solid #30333C;
   vertical-align: auto;
+}
+
+#title h1 {
+  margin: 10px;
+}
+
+#search-bar {
+  width: 400px;
+  margin: auto;
+  padding-top: 15px;
 }
 
 td {

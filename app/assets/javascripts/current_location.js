@@ -65,4 +65,8 @@ function initialiseMap()
       google.maps.event.addListener(map, 'zoom_changed', function() {
         parkOverlay.setMap(null);
       });
-    }
+
+      google.maps.event.addListener(map, 'dragend', function(){
+        getParking();
+      });
+    };

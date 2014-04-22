@@ -58,13 +58,14 @@ function initialiseMap()
       window.map = map;
       window.marker = marker;
 
-      // Hides the loading div once the map has displayed the current user's location.
+      // Hides the loading div once the map has displayed the current user's location & then calls for parking data.
       document.getElementById('loading').style.visibility = "hidden";
       getParking();
 
       // removes the overlay when the user zooms in or out
       google.maps.event.addListener(map, 'zoom_changed', function() {
         parkOverlay.setMap(null);
+        getParking();
       });
 
       google.maps.event.addListener(map, 'dragend', function(){

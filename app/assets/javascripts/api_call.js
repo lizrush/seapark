@@ -1,4 +1,5 @@
 function getParking(){
+  removeOverlay();
   // Before making the call to the API, this will toggle the mapOptions so that the user cannot drag to a new location or zoom in or out. This prevents the user from changing the view of the map before the overlay is placed.
   // Toggle the semi-transparent div with loading gif and set the text so that the user knows the app is still running.
   map.setOptions(window.disabled_map);

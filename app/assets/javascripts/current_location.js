@@ -58,8 +58,7 @@ function initialiseMap()
       window.map = map;
       window.marker = marker;
 
-      // Hides the loading div once the map has displayed the current user's location & then calls for parking data.
-      document.getElementById('loading').style.visibility = "hidden";
+      // immediately makes the api call when the location in loaded.
       getParking();
 
       // removes the overlay when the user zooms in or out

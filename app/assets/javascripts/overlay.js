@@ -24,6 +24,7 @@ function removeOverlay(){
   if (typeof parkOverlay != 'undefined') {
    parkOverlay.setMap(null);
   };
+  map.setOptions(enabled_map);
 };
 
 function error_overlay(url){

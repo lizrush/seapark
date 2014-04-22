@@ -52,7 +52,14 @@ body {
 .btn-primary {
   color: #f8f8f8;
   background-color: #292C35;
-  border-color: silver;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  -moz-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+  border: 1px solid #30333C;
+  vertical-align: auto;
 }
 .btn-primary:hover,
 .btn-primary:focus,
@@ -164,7 +171,7 @@ td {
 #modal-content {
     border-radius: 5px;
     background: #fff;
-    padding: 20px;
+    padding: 25px;
 }
 
 #about-contents {
@@ -184,11 +191,11 @@ td {
   max-width: 400px;
 }
 
-#closedragons {
+#errorOK {
   display: none;
   position: absolute;
-  top: 55px;
+  top: 190px;
   left: 60%;
-  margin-left: -180px;
-  z-index: 5;
+  margin-left: -100px;
+  z-index: 20;
 }

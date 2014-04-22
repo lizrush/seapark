@@ -33,5 +33,5 @@ function error_overlay(url){
   errorOverlay.setMap(map);
   window.parkOverlay = errorOverlay;
 
-  toggleVisibility('closedragons');
+  toggleVisibility('errorOK');
 };

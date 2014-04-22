@@ -13,6 +13,9 @@ function codeAddress() {
             position: results[0].geometry.location,
             draggable: false
         });
+        // calls get parking after marker is dropped successfully
+        getParking();
+
         } else {
           alert('Sorry, search was not successful for the following reason: \n' + status);
         }

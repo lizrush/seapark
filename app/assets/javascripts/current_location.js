@@ -60,6 +60,7 @@ function initialiseMap()
 
       // Hides the loading div once the map has displayed the current user's location.
       document.getElementById('loading').style.visibility = "hidden";
+      getParking();
 
       // removes the overlay when the user zooms in or out
       google.maps.event.addListener(map, 'zoom_changed', function() {

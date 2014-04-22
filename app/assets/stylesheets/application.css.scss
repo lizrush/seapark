@@ -183,3 +183,12 @@ td {
 #help-contents {
   max-width: 400px;
 }
+
+#closedragons {
+  display: none;
+  position: absolute;
+  top: 55px;
+  left: 60%;
+  margin-left: -180px;
+  z-index: 5;
+}

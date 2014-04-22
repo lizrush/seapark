@@ -31,5 +31,7 @@ function error_overlay(url){
   marker.setMap(null);
   errorOverlay = new google.maps.GroundOverlay(url, map.getBounds());
   errorOverlay.setMap(map);
-  window.parkOverlay = errorOverlay
+  window.parkOverlay = errorOverlay;
+
+  toggleVisibility('closedragons');
 };

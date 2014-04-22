@@ -7,7 +7,7 @@
 
     <div id="search-bar">
       <label class="sr-only" for="address">Search for locations</label>
-      <input id="address" type="textbox" value="The Space Needle" class="form-control">
+      <input id="address" type="textbox" placeholder="ex: The Space Needle" class="form-control">
       <input type="button" value="Search" onclick="codeAddress()" class="btn btn-success">
     </div>
   </div>
@@ -20,6 +20,7 @@
         </div>
 
           <div id="map_canvas"></div>
+          <a class="btn btn-success" id="closedragons" onclick="toggleVisibility('closedragons'); removeOverlay();">Ok.</a>
     </div>
         <br><br>
     <div class="col-md-4">

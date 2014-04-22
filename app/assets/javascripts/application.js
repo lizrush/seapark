@@ -100,3 +100,13 @@ var modal = (function(){
           e.preventDefault();
         });
       });
+
+
+// this method is used on the ok button for dragons when the user wants to search for a location.
+function toggleVisibility(id) {
+       var e = document.getElementById(id);
+       if(e.style.display == 'block')
+          e.style.display = 'none';
+       else
+          e.style.display = 'block';
+    };

@@ -25,6 +25,8 @@ body {
 .content {
   width: 70%;
   margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
   background-color: #f8f8f8;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -32,11 +34,11 @@ body {
   -moz-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
   -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+  border: 1px solid #30333C;
 }
 
 #inner-contents {
   margin-top: 10px;
-  margin-bottom: 10px;
   width:100%;
   text-align: center;
   margin-left: auto;

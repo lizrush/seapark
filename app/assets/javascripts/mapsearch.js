@@ -1,5 +1,9 @@
 // This is the search method using google's geocoder API. This works best with addresses and well known landmarks but isn't fuzzy enough for generic searches like "Greenlake". Future work could include using a more fuzzy search within the scope of the current city.
 function codeAddress() {
+
+  // if user has an error overlay but doesnt close it, this ensures it is closed
+  hideElement('errorOK');
+
   geocoder = new google.maps.Geocoder();
   var address = document.getElementById('address').value;
 

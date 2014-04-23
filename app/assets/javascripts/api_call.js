@@ -9,11 +9,10 @@ function getParking(){
   // Set variables for making the call to the API. If the map_canvas size changes, be sure to update here.
   // Center is the map's center, NOT the user's location by default. This data is used for validations, query limits to the API, and caching.
   var bbox = map.getBounds().toString();
-  console.log("bbox: \n" + bbox);
   var center = map.getCenter().toString();
-  console.log("center: \n" + center);
-
-  var map_size = "400,400";
+  mapHeight = $('#map_canvas').height();
+  mapWidth = $('#map_canvas').width();
+  var map_size = mapWidth + "," + mapHeight;
 
   $.ajax({
     url: "http://ec2-54-186-130-90.us-west-2.compute.amazonaws.com/requests",

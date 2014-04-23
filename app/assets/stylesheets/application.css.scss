@@ -261,8 +261,18 @@ td {
 }
 
 @media (min-width: 1100px) {
+  .content {
+    width: 80%;
+  }
+
   #map_canvas {
    width: 500px;
    height: 400px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .content {
+    width: 70%;
   }
 }

@@ -23,7 +23,7 @@ body {
 }
 
 .content {
-  width: 90%;
+  width: 100%;
   margin: auto;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -107,7 +107,7 @@ td {
 
 #map_canvas{
   width: 300px;
-  height: 200px;
+  height: 300px;
   margin: auto;
 }
 
@@ -115,7 +115,7 @@ td {
   position: absolute;
   margin: auto;
   width: 300px;
-  height: 200px;
+  height: 300px;
   z-index: 10;
   background-color: rgba(255, 255, 255, 0.8);
 }
@@ -196,9 +196,17 @@ td {
 }
 
 @media (min-width: 500px) {
-  #map_canvas{
-   width: 300px;
-   height: 300px;
+  .content {
+    width: 95%;
+  }
+
+  #search-bar {
+    width: 70%;
+  }
+
+  #map_canvas {
+   width: 400px;
+   height: 400px;
   }
 
   #loading {
@@ -228,4 +236,33 @@ td {
     z-index: 15;
   }
 
+}
+
+@media (min-width: 750px) {
+  #map_canvas {
+    width: 450px;
+    height: 400px;
+  }
+}
+
+@media (min-width: 950px) {
+  .content {
+    width: 85%;
+  }
+
+  #map_canvas {
+   width: 475px;
+   height: 400px;
+  }
+
+  #search-bar {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1100px) {
+  #map_canvas {
+   width: 500px;
+   height: 400px;
+  }
 }

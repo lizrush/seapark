@@ -45,9 +45,6 @@ body {
   margin-right: auto;
 }
 
-#inner-contents table {
-  margin: auto;
-}
 
 .btn-primary {
   color: #f8f8f8;
@@ -77,7 +74,6 @@ a:visited {
 }
 
 #map_canvas{
- margin-top: 40px;
  margin-right: 50px;
  margin-left: 50px;
  margin-bottom: 50px;
@@ -104,6 +100,7 @@ a:visited {
 #search-bar {
   width: 400px;
   margin: auto;
+  padding-bottom: 15px;
   padding-top: 15px;
 }
 
@@ -118,7 +115,6 @@ td {
 
 #loading {
   position: absolute;
-  margin-top: 40px;
   margin-right: 50px;
   margin-left: 50px;
   margin-bottom: 50px;
@@ -130,11 +126,7 @@ td {
 
 #loading img {
   width: 50px;
-  margin-top: 200px;
-}
-
-#legend {
-  margin-top: 30px;
+  margin-top: 160px;
 }
 
 #overlay {
@@ -194,7 +186,7 @@ td {
 #errorOK {
   display: none;
   position: absolute;
-  top: 190px;
+  top: 150px;
   left: 60%;
   margin-left: -100px;
   z-index: 20;

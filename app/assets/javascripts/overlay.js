@@ -30,9 +30,15 @@ function removeOverlay(){
 function error_overlay(url){
   // fetches png fron url and creates overlay object to place on map bound to the map's bounds
   marker.setMap(null);
-  errorOverlay = new google.maps.GroundOverlay(url, map.getBounds());
-  errorOverlay.setMap(map);
-  window.parkOverlay = errorOverlay;
 
-  showElement('errorOK');
+  // checks to see if the url string is empty (in the case of a general error). If the api returns an error overlay, then that is placed on the map.
+  if (url != "") {
+    showElement('errorOK');
+    errorOverlay = new google.maps.GroundOverlay(url, map.getBounds());
+    errorOverlay.setMap(map);
+    window.parkOverlay = errorOverlay;
+  } else  {
+    alert('Sorry, an unexpected error occurred.')
+  };
+
 };

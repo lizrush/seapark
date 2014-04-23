@@ -1,4 +1,4 @@
-<div id="inner-contents" class="row">
+<div id="inner-contents">
   <div class="row">
 
     <div id="title">
@@ -22,7 +22,7 @@
           <div id="map_canvas"></div>
           <a class="btn-sm btn-primary" id="errorOK" onclick="hideElement('errorOK'); removeOverlay();">Ok</a>
     </div>
-        <br><br>
+
     <div class="col-md-4">
       <table class="table-condensed" id="legend">
         <tr>
@@ -47,7 +47,7 @@
         </tr>
         <tr>
           <td><%= image_tag('legendimages/no-parking.png') %></td>
-          <td>No Parking Allowed <span rel="tooltip" title="Parking is not allowed in these zones"><%=   image_tag('tooltip.png') %></span></td>
+          <td>No Parking Allowed <span rel="tooltip" title="Parking is not allowed in these zones."><%=   image_tag('tooltip.png') %></span></td>
         </tr>
         <tr>
           <td><%= image_tag('legendimages/unrestricted.png') %></td>

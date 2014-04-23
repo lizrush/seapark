@@ -74,7 +74,7 @@ a:visited {
 }
 
 #title {
-  background-color: #fff;
+  background-color: #f8f8f8;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
@@ -105,15 +105,19 @@ td {
   display: inline;
 }
 
-#map_canvas{
+#mapwrapper {
   width: 300px;
   height: 300px;
   margin: auto;
 }
 
+#map_canvas{
+  width: 100%;
+  height: 100%;
+}
+
 #loading {
   position: absolute;
-  margin: auto;
   width: 300px;
   height: 300px;
   z-index: 10;
@@ -204,28 +208,26 @@ td {
     width: 70%;
   }
 
-  #map_canvas {
-   width: 400px;
-   height: 400px;
+  #mapwrapper {
+    width: 400px;
+    height: 400px;
+    margin: auto;
   }
 
   #loading {
   position: absolute;
-  margin-right: 50px;
-  margin-left: 50px;
-  margin-bottom: 50px;
-  width: 300px;
+  width: 400px;
+  height: 400px;
   z-index: 10;
   background-color: rgba(255, 255, 255, 0.8);
-  height: 300px;
-}
+  }
 
-#loading img {
-  width: 50px;
-  margin-top: 160px;
-}
+  #loading img {
+    width: 50px;
+    margin-top: 160px;
+  }
 
-#overlay {
+  #overlay {
     position: fixed;
     top: 0;
     left: 0;
@@ -239,9 +241,25 @@ td {
 }
 
 @media (min-width: 750px) {
-  #map_canvas {
+
+  #mapwrapper {
     width: 450px;
     height: 400px;
+    margin: auto;
+  }
+
+  #loading {
+    position: absolute;
+    margin: auto;
+    width: 450px;
+    height: 400px;
+    z-index: 10;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+
+  #loading img {
+    width: 50px;
+    margin-top: 160px;
   }
 }
 
@@ -250,14 +268,30 @@ td {
     width: 85%;
   }
 
-  #map_canvas {
-   width: 475px;
-   height: 400px;
+  #mapwrapper {
+    width: 475px;
+    height: 400px;
+    margin: auto;
   }
 
   #search-bar {
     width: 50%;
   }
+
+  #loading {
+    position: absolute;
+    margin: auto;
+    width: 475px;
+    height: 400px;
+    z-index: 10;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+
+  #loading img {
+    width: 50px;
+    margin-top: 160px;
+  }
+
 }
 
 @media (min-width: 1100px) {
@@ -265,9 +299,24 @@ td {
     width: 80%;
   }
 
-  #map_canvas {
-   width: 500px;
-   height: 400px;
+  #mapwrapper {
+    width: 500px;
+    height: 400px;
+    margin: auto;
+  }
+
+  #loading {
+    position: absolute;
+    margin: auto;
+    width: 500px;
+    height: 400px;
+    z-index: 10;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+
+  #loading img {
+    width: 50px;
+    margin-top: 160px;
   }
 }
 

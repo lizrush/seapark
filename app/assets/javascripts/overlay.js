@@ -8,7 +8,7 @@ function set_overlay(data){
   nelong  = clean_bounds[3]
   swLL    = new google.maps.LatLng(swlat, swlong)
   neLL    = new google.maps.LatLng(nelat, nelong)
-
+  console.log(data.query);
   // created new bounds object for overlay
   imageBounds = new google.maps.LatLngBounds(swLL, neLL)
 

@@ -339,6 +339,15 @@ td {
     width: 50px;
     margin-top: 160px;
   }
+
+  #errorOK {
+    display: none;
+    position: absolute;
+    top: 150px;
+    left: 70%;
+    margin-left: -130px;
+    z-index: 20;
+  }
 }
 
 @media (min-width: 1200px) {

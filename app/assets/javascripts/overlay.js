@@ -33,9 +33,9 @@ function error_overlay(url){
 
   // checks to see if the url string is empty (in the case of a general error). If the api returns an error overlay, then that is placed on the map.
   if (url != "") {
-    showElement('errorOK');
     errorOverlay = new google.maps.GroundOverlay(url, map.getBounds());
     errorOverlay.setMap(map);
+    showElement('errorOK');
     window.parkOverlay = errorOverlay;
   } else  {
     alert('Sorry, an unexpected error occurred.')

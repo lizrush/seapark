@@ -7,6 +7,7 @@ Seapark::Application.routes.draw do
   get '/seattle' => 'welcome#map'
   get '/about' => 'welcome#about'
   get '/help' => 'welcome#help'
+  get '/get-the-app' => 'welcome#getapp'
   get '/how-it-works' => 'welcome#how-it-works'
 
 end
